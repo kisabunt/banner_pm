@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="wight=device-wight", initial-scale=1.0>
+   <style>
+   @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300|Play:400,700&subset=cyrillic,cyrillic-ext');
+   .banner {
+     display: block;
+     margin: auto;
+     width: 90%;
+     max-width: 1366px;
+     /*border: 1px dotted black;*/
+     overflow: hidden;
+     box-sizing: border-box;
+     background-image: url("materials/background-2928656_1280.jpg");
+     background-repeat: repeat-x;
+     background-size: cover;
+     background-position-y: 27%;
+   }
+      @keyframes bounce {
+      0%	{ color: black; }
+      25%	{ color: #fff; }
+      100%	{ color: black; }
+      }
+      @-webkit-keyframes bounce {
+      0%	{ color: #135fd8; }
+      25%	{ color: red; }
+      100%	{ color: #135fd8; }
+      }
+      @-moz-keyframes bounce {
+      0%	{ color: #135fd8; }
+      25%	{ color: red; }
+      100%	{ color: #135fd8; }
+      }
+   .banner_title {
+     font-family: 'Play', sans-serif;
+     color: #135fd8;
+     margin: 10px 7px 9px 24px;
+     padding: 0 0 8px 0;
+     animation: bounce 3s infinite ease;
+     -webkit-animation: bounce 3s infinite ease;
+     -moz-animation: bounce 3s infinite ease;
+   }
+   @keyframes show {
+   0%	{ opacity: 0; }
+   25%	{ opacity: 0.4; }
+   100%	{ opacity: 1; }
+   }
+   .banner_text {
+     font-family: 'Fira Sans Condensed', sans-serif;
+     margin: 10px 7px 9px 24px;
+     padding: 0 0 8px 0;
+     opacity: 1;
+     animation: show 2s 1 ease;
+     -webkit-animation: show 2s 1 ease;
+     -moz-animation: show 2s 1 ease;
+   }
+   </style>
+ </head>
+ <body>
+   <div class="banner">
+   <h1 class="banner_title"> super banner 3000 </h1>
+   <p class="banner_text"> привет Макс и Александр! </p>
+   <img src="/materials/maxresdefault.jpg" alt "fish">
+   </div>
+ </body>
+</html>
